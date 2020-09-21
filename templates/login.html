@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sign In</title>
+</head>
+    <link rel="stylesheet" href="static/css/login.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+<body>
+    <div class="logincontent">
+        <div class="loginheading">
+            Sign In
+        </div>
+        <form action= "/login.html" method="POST">
+        <label for="txtUserName">
+            Username:</label>
+        <input type="text" id="txtUserName" name="username" placeholder="Enter Username" required>
+        <label for="txtPassword">
+            Password:</label>
+        <input type="password" id="txtPassword" name="password" placeholder="Enter Password" required>
+        <div class="loginremember">
+            <input type="checkbox" id="chbRemember" name="remember_me" />
+            <label class="check" for="chbRemember">Remember me next time</label>
+            <button type="submit" class="loginbtn" name="login" value="Login" id="btnSubmit">Submit</button>
+        </div>
+        <div class="regpage">
+            <h6>Do not have account?</h6>
+            <a href="register.html" class="reg">Register</a>
+        </div>
+    </div>
+</form>
+{% include "_message.html" %}
+</body>
+</html>

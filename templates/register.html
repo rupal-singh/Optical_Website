@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sign Up</title>
+</head>
+    <link rel="stylesheet" href="static/css/register.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+<body>
+    <div class="regcontent">
+        <div class="regheading">
+            Sign Up
+        </div>
+        <form action= "/register.html" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="txtUserName" name="username" placeholder="Enter Username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="txtPassword" name="password" placeholder="Enter Password" required><br>
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="txtPassword" name="c_password" placeholder="Enter Password" required><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" required>Male
+        <input type="radio" name="gender" required>Female<br>
+        <label for="email">Email Id:</label>
+        <input type="email" id="txtemail" name="email" placeholder="Enter Email Id" required><br>
+        <label for="contact">Phone No:</label>
+        <select>
+                <option>+90</option>
+                <option>+91</option>
+                <option>+92</option>
+                <option>+93</option>
+                <option>+94</option>
+                <option>+95</option>
+                <option>+96</option>
+                <option>+97</option>
+                <option>+98</option>
+                <option>+99</option>
+        </select>
+        <input type="number" name="contact" placeholder="7763******" required><br>
+        <button type="submit" class="submitbtn" value="Submit" id="btnSubmit"> Submit</button><br>
+        </div>
+        <div class="loginpage">
+            Already Have a Account?
+            <a href="login.html" class="login">SignIn</a>
+        </div>
+    </div>
+    {% include "_message.html" %}
+</form>
+</body>
+</html>
